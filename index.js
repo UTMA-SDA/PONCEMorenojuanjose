@@ -17,13 +17,13 @@ const app = express();
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: 'AIzaSyDhu4mr1JuHMGAf8xPUFo16BJZR7tXm9Oc',
-  authDomain: 'utma-sda.firebaseapp.com',
-  projectId: 'utma-sda',
-  storageBucket: 'utma-sda.appspot.com',
-  messagingSenderId: '590082649662',
-  appId: '1:590082649662:web:23c3bfdd23867045162b6f',
-  measurementId: 'G-VDJR68GM9N',
+  apiKey: 'AIzaSyBz2fJhpFazhhp3nqP0T6XX8pYxxf--NgU',
+  authDomain: 'optimistic-leaf-364104.firebaseapp.com',
+  projectId: 'optimistic-leaf-364104',
+  storageBucket: 'optimistic-leaf-364104.appspot.com',
+  messagingSenderId: '717297179761',
+  appId: '1:717297179761:web:237b82056133ae7a20cfd0',
+  measurementId: 'G-YZDDZXK4TE',
 };
 
 // Initialize Firebase
