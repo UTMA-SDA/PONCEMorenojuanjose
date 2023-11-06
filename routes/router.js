@@ -6,5 +6,6 @@ const router = express.Router();
 router.use('/auth', auth);
 
 router.use(verifyApiKey);
+router.use('/ponmor', ponmor);
 
 export default router;

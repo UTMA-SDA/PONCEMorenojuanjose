@@ -44,11 +44,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api', router);
 
-
-
 // routes
 app.get('/', (req, res) => {
-  res.send('Hello world from render! Juan Ponce,  Enrique Perez \n🥸');
+  res.send('Hello world from render! Juan Ponce \n🥸');
 });
 
 app.listen(process.env.PORT || 3000, () => {
