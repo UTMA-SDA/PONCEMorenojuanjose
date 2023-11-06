@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
   async function query(data) {
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/segmind/SSD-1B",
+      "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
       {
         headers: { Authorization: "Bearer "+ process.env.HF_ACCESS_TOKEN },
         method: "POST",
@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
     const result = await response.blob();
     return result;
   }
-  query({"inputs": "Astronaut riding a horse"}).then((response) => {
+  query({"inputs": "Cat eating butterflies "}).then((response) => {
     res.type(response.type);
     response.arrayBuffer().then((buffer)=>{
       res.send(Buffer.from(buffer))
